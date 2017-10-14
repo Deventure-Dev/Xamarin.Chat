@@ -1,5 +1,6 @@
 using System.Windows.Input;
 using MvvmCross.Core.ViewModels;
+using MvvmCross.Platform;
 using XamChat.Core.Interfaces;
 
 namespace XamChat.Core.ViewModels
@@ -19,6 +20,7 @@ namespace XamChat.Core.ViewModels
 		public LoginViewModel(ICoreValidationService coreValidationService, 
                               INativeValidationService nativeValidationService)
 		{
+            //var myCoreValidationService = Mvx.Resolve<ICoreValidationService>();
 			mCoreValidationService = coreValidationService;
 			mNativeValidationService = nativeValidationService;
 		}

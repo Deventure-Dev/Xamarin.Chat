@@ -49,9 +49,9 @@
     <ConsolePause>false</ConsolePause>
     <MtouchArch>ARMv7, ARM64</MtouchArch>
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
-    <CodesignKey>iPhone Developer: Flavius Demian (YAEJE3596Y)</CodesignKey>
+    <CodesignKey>iPhone Developer: Flaviu Demian (YAEJE3596Y)</CodesignKey>
     <MtouchDebug>true</MtouchDebug>
-    <CodesignProvision>GoWorky EE Dev Prov</CodesignProvision>
+    <CodesignProvision></CodesignProvision>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
     <DebugType>none</DebugType>
