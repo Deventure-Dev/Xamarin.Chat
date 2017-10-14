@@ -2,6 +2,7 @@ using Android.App;
 using Android.Content.PM;
 using Android.Widget;
 using XamChat.Core.ViewModels;
+using XamChat.Shared;
 
 namespace XamChat.Android.UI
 {
@@ -18,8 +19,8 @@ namespace XamChat.Android.UI
         {
             SetContentView(Resource.Layout.activity_login);
 
-            ViewModel.Email = "slown1";
-            ViewModel.Password = "slowarad1@";
+            var emailLabel = FindViewById<TextView>(Resource.Id.tv_email);
+            emailLabel.Text = EmailLabelHelper.GetEmailLabel();
         }
     }
 }

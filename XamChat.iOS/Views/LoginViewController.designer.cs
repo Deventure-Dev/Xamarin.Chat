@@ -20,6 +20,10 @@ namespace XamChat.iOS.Views
 
         [Outlet]
         [GeneratedCode ("iOS Designer", "1.0")]
+        UIKit.UILabel label_Email { get; set; }
+
+        [Outlet]
+        [GeneratedCode ("iOS Designer", "1.0")]
         UIKit.UITextField textField_Email { get; set; }
 
         [Outlet]
@@ -31,6 +35,11 @@ namespace XamChat.iOS.Views
             if (btn_Login != null) {
                 btn_Login.Dispose ();
                 btn_Login = null;
+            }
+
+            if (label_Email != null) {
+                label_Email.Dispose ();
+                label_Email = null;
             }
 
             if (textField_Email != null) {

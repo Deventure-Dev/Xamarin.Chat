@@ -121,12 +121,8 @@
     <InterfaceDefinition Include="MainStoryboard_iPhone.storyboard">
       <SubType>Designer</SubType>
     </InterfaceDefinition>
-    <InterfaceDefinition Include="MainStoryboard_iPad.storyboard">
-      <SubType>Designer</SubType>
-    </InterfaceDefinition>
     <None Include="packages.config" />
     <Compile Include="Bootstrap\PhoneCallPluginBootstrap.cs" />
-    <Compile Include="NoPreLoadPluginBootstrapAction.cs" />
     <InterfaceDefinition Include="LaunchScreen.storyboard" />
     <Compile Include="Services\UIService.cs" />
     <InterfaceDefinition Include="UI\FriendsTableCell2.xib" />
@@ -229,6 +225,7 @@
     <ImageAsset Include="icon.xcassets\AppIcon.appiconset\Mac_512pt.png" />
     <ImageAsset Include="icon.xcassets\AppIcon.appiconset\Mac_512pt%402x.png" />
   </ItemGroup>
+  <Import Project="..\XamChat.Shared\XamChat.Shared.projitems" Label="Shared" Condition="Exists('..\XamChat.Shared\XamChat.Shared.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

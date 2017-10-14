@@ -4,6 +4,7 @@ using MvvmCross.iOS.Views;
 using ObjCRuntime;
 using UIKit;
 using XamChat.Core.ViewModels;
+using XamChat.Shared;
 
 namespace XamChat.iOS.Views
 {
@@ -50,8 +51,7 @@ namespace XamChat.iOS.Views
 
             View.AddGestureRecognizer(gestureRecognizer);
 
-            ViewModel.Email = "slown1";
-            ViewModel.Password = "slowarad1@";
+            label_Email.Text = EmailLabelHelper.GetEmailLabel();
         }
     }
 }
