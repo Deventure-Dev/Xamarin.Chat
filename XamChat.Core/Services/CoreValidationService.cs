@@ -1,6 +1,6 @@
 ﻿using XamChat.Core.Interfaces;
 
-namespace XamChat.Core.Implementation
+namespace XamChat.Core.Services
 {
     public class CoreValidationService : ICoreValidationService
     {

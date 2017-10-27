@@ -8,7 +8,6 @@ using XamChat.Shared;
 
 namespace XamChat.iOS.Views
 {
-    //[Register("LoginViewController")]
     [MvxFromStoryboard(StoryboardName = "MainStoryboard_iPhone")]
     public partial class LoginViewController : MvxViewController<LoginViewModel>
     {
